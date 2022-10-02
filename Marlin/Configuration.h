@@ -20,8 +20,8 @@
  *
  */
 #pragma once
-#error "Don't build with import-2.1.x configurations!"
-#error "Use the 'bugfix...' or 'release...' configurations matching your Marlin version."
+// #error "Don't build with import-2.1.x configurations!"
+// #error "Use the 'bugfix...' or 'release...' configurations matching your Marlin version."
 
 //#define SPRO_INVERTED_E // Enable if the extruder runs the wrong way
 //#define SPRO_TMC2209 // Enable for the TMC2209 driver version
@@ -631,7 +631,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 275
+#define HEATER_0_MAXTEMP 310
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -3164,14 +3164,14 @@
  * TFT UI - User Interface Selection. Enable one of the following options:
  *
  *   TFT_CLASSIC_UI - Emulated DOGM - 128x64 Upscaled
- *   TFT_COLOR_UI   - Marlin Default Menus, Touch Friendly, using full TFT capabilities
+ *   TFT_COLOR_UI   - Marfd lin Default Menus, Touch Friendly, using full TFT capabilities
  *   TFT_LVGL_UI    - A Modern UI using LVGL
  *
  *   For LVGL_UI also copy the 'assets' folder from the build directory to the
  *   root of your SD card, together with the compiled firmware.
  */
-//#define TFT_CLASSIC_UI
-#define TFT_COLOR_UI
+#define TFT_CLASSIC_UI
+// #define TFT_COLOR_UI
 //#define TFT_LVGL_UI
 
 #if ENABLED(TFT_LVGL_UI)
